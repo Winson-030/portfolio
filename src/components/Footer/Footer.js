@@ -4,6 +4,8 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 import { SiLeetcode } from 'react-icons/si';
+
+
 const Footer = () => {
   return (
     <FooterWrapper>
@@ -21,7 +23,7 @@ const Footer = () => {
         <LinkColumn>
           <LinkTitle>Github</LinkTitle>
           <LinkItem href="https://github.com/Winson-030">
-            @winsonlee
+            @winson030
           </LinkItem>
         </LinkColumn>
       </LinkList>
@@ -33,7 +35,7 @@ const Footer = () => {
           <SocialIcons href="https://github.com/Winson-030">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="www.linkedin.com/in/winson-dev">
+          <SocialIcons href="https://www.linkedin.com/in/winson-dev">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://leetcode.cn/u/winson-030">
