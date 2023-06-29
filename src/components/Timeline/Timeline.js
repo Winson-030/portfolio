@@ -2,7 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimelineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { TimeLineData } from '../../constants/constants';
+import { en_US } from '@/constants/constants';
+
+const TimeLineData = en_US.TimeLineData;
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 

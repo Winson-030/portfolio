@@ -1,17 +1,21 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
-import {SiLeetcode} from 'react-icons/si'
+import { SiLeetcode,SiGoogletranslate } from 'react-icons/si';
+
+
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 
-
-const Header = () =>  (
+const handleLang = () => {
+  
+}
+const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <div style={{ display: 'flex', alignItems: 'center', color:"white"}}>
+        <div style={{ display: 'flex', alignItems: 'center', color: "white" }}>
           <DiCssdeck size="5rem" /> <NavLink>Winson Lee</NavLink>
         </div>
       </Link>
@@ -26,25 +30,30 @@ const Header = () =>  (
         <Link href="#tech">
           <NavLink>Technologies</NavLink>
         </Link>
-      </li>        
+      </li>
       <li>
         <Link href="#about">
           <NavLink>About</NavLink>
         </Link>
-      </li>        
+      </li>
     </Div2>
-      <Div3>
-        <SocialIcons href="https://github.com/Winson-030">
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://www.linkedin.com/in/winson-dev">
-          <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://leetcode.cn/u/winson-030">
-          <SiLeetcode size="3rem"/>
-        </SocialIcons>
-      </Div3>
-    </Container>
+    <Div3>
+
+      <SocialIcons href="https://github.com/Winson-030">
+        <AiFillGithub size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="https://www.linkedin.com/in/winson-dev">
+        <AiFillLinkedin size="3rem" />
+      </SocialIcons>
+ 
+      <SocialIcons href="https://leetcode.cn/u/winson-030">
+        <SiLeetcode size="3rem" />
+      </SocialIcons>
+      <SocialIcons onClick={handleLang}>
+        <SiGoogletranslate size="3rem" />
+      </SocialIcons>
+    </Div3>
+  </Container>
 );
 
 export default Header;

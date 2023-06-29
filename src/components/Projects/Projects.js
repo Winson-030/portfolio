@@ -2,8 +2,11 @@ import React from 'react';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
-
+import { en_US } from '@/constants/constants';
+import { zh_CN } from '@/constants/zh_CN';
+let isEng = false;
+const projects = isEng ? en_US.projects : zh_CN.projects;
+const card = isEng ? en_US.card : zh_CN.card;
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
@@ -19,7 +22,7 @@ const Projects = () => (
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
             <div>
-              <TitleContent>Stack</TitleContent>
+              <TitleContent>{card.stack}</TitleContent>
               <TagList>
                 {p.tags.map((t, i) => {
                   return <Tag key={i}>{t}</Tag>;
@@ -27,8 +30,8 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={p.visit}>Demo</ExternalLinks>
-              <ExternalLinks href={p.source}>Code</ExternalLinks>
+              <ExternalLinks href={p.visit}>{card.demo}</ExternalLinks>
+              <ExternalLinks href={p.source}>{card.code}</ExternalLinks>
             </UtilityList>
           </BlogCard>
         );
