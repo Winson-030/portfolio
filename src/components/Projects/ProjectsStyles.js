@@ -32,6 +32,8 @@ export const BlogCard = styled.div`
   }
 `;
 export const TitleContent = styled.div`
+margin-top:2em;
+font-weight:800;
   text-align: center;
   z-index: 20;
   width: 100%;
@@ -107,6 +109,8 @@ justify-content: space-around;
 padding: 2rem;
 `
 export const Tag = styled.li`
+font-weight: 600;
+font-family: monospace;
 color: #d8bfbf;
 font-size: 1.5rem;
 `

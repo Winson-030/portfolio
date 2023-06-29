@@ -1,7 +1,8 @@
+
 export const projects = [
     {
       title: 'Nianyu rentstore',
-      description: "This rentstore project is developed using the SpringBoot and Vue.js, including mobile users and management,and deployed using Docker, to help groups with temporary rental needs and want to profit from idle items Body builds bridges. Leverage Elasticsearch and Echarts for efficient product search modules and elegant user data presentations.",
+      description: "This rentstore project is developed using the SpringBoot and Vue.js, including mobile client and admin platform, and deployed using Docker, to connect people with temporary rental needs and want to profit from idle items. With Elasticsearch and Echarts for efficient product search modules and elegant user data presentations.",
         image: '/images/rentstore.jpg',
         tags: ['Vue.js', 'SpringBoot', 'Docker', 'Elasticsearch'],
       source: 'https://github.com/Winson-030/nianyu',
@@ -38,9 +39,9 @@ export const projects = [
   ];
   
   export const TimeLineData = [
-    { year: 2017, text: 'Started my journey', },
-    { year: 2018, text: 'Worked as a freelance developer', },
-    { year: 2019, text: 'Founded JavaScript Mastery', },
-    { year: 2020, text: 'Shared my projects with the world', },
-    { year: 2021, text: 'Started my own platform', },
+    { year: 2020, text: 'Started my journey in program', },
+    { year: 2021, text: 'Joined FreeCodeCamp Online Training Porjects', },
+    { year: 2022, text: 'Joined Bootcamp to learn Backend development', },
+    { year: 2023, text: 'Looking for jobs and learning Docker ', },
+    { year: 2024, text: 'Keep dreaming', },
   ];
