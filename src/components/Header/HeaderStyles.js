@@ -32,6 +32,7 @@ export const Div2 = styled.div`
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
+
   }
 `;
 export const Div3 = styled.div`
@@ -57,8 +58,13 @@ font-family: monospace;
     opacity: 1;
     cursor: pointer;
   }
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 1rem 1rem;
+    
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
+    padding: .2rem 1.5rem;
+    
   }
 `;
 

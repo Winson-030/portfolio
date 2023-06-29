@@ -76,7 +76,7 @@ export const CardInfo = styled.p`
   line-height: 24px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
+    padding:.3rem 3rem;
   
 }
 `;
@@ -91,10 +91,10 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-color:#d4c0c0;
+color:#ffffff;
 font-size: 1.6rem;
 padding:1rem 1.5rem;
-background: #6b3030;
+background: #212d45;
 border-radius: 15px;
 transition: 0.5s;
 &:hover{
@@ -105,12 +105,22 @@ transition: 0.5s;
 
 export const TagList = styled.ul`
 display: flex;
+
 justify-content: space-around;
 padding: 2rem;
+@media ${(props) => props.theme.breakpoints.sm} {
+ display: flex;
+ flex-direction:column;
+  
+}
 `
 export const Tag = styled.li`
 font-weight: 600;
 font-family: monospace;
 color: #d8bfbf;
 font-size: 1.5rem;
+@media ${(props) => props.theme.breakpoints.sm} {
+  margin-top:5px;
+  
+}
 `
