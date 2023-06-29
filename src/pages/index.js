@@ -1,8 +1,14 @@
-
+import Layout from "@/layouts/Layout";
+import { Section } from "@/styles/GlobalComponents";
 
 const Home = () => {
     return (
-        <h1>hello world</h1>
+        <Layout>
+            <Section grid>
+            <h1>hello world</h1>
+            </Section>
+        </Layout>
+      
     )
 }
 
