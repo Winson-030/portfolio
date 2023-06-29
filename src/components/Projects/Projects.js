@@ -4,7 +4,7 @@ import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag,
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { en_US } from '@/constants/constants';
 import { zh_CN } from '@/constants/zh_CN';
-let isEng = false;
+let isEng = true;
 const projects = isEng ? en_US.projects : zh_CN.projects;
 const card = isEng ? en_US.card : zh_CN.card;
 const Projects = () => (
