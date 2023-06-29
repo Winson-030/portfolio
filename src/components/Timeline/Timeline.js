@@ -46,8 +46,8 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I was a Social worker and now I am a programmer.
-        I code for my dreams, for the people I love, and for the society I care about.
+        I was a Social worker and now I am a programmer. Also as a Linux user ,I love open-source software and community.
+        I code for living, for the people I love, and for the society I care about.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

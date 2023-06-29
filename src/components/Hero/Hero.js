@@ -9,13 +9,13 @@ const Hero = (props) => (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Welcome To <br />
-          My Personal Portfolio
+        I am Winson Lee <br />
+          Welcome To My Website
         </SectionTitle>
         <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        I am a full-stack developer currently living in Guangzhou,China. Also a big fan of Linux and I LOVE open-source software and community. Outside of programming I work as a model in a art academy. <i>I am looking for a job as a software developer, ideally working remotely.</i> Resume is below, feel free to contact me via email if you are interested.
         </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
+        <Button onClick={props.handleClick}>Resume</Button>
       </LeftSection>
     </Section>
   </>

@@ -7,10 +7,10 @@ import { BoxNum, BoxText, Boxes, Box } from "./AccompolishmentsStyles";
 
 
 const data = [
-    { number: 20, text: 'Open Source Projects' },
-    { number: 1000, text: 'Students', },
-    { number: 1900, text: 'Github Followers', },
-    { number: 5000, text: 'Github Stars', }
+    { number: 1, text: 'Github PR I contributed', },
+    { number: 2, text: 'Open Source Projects' },
+    { number: 300, text: 'People I helped to solve network and device issues', },
+    { number: 600, text: 'Days of programming career', },
 ];
 
 

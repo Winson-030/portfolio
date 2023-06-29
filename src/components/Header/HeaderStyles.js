@@ -47,6 +47,7 @@ export const Div3 = styled.div`
 
 // Navigation Links
 export const NavLink = styled.div`
+font-family: monospace;
   font-size: 2rem;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);

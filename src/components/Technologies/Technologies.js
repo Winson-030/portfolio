@@ -34,7 +34,7 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Java, Node and Databases
+            Java, Node.js and Databases
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -46,10 +46,11 @@ const Technologies = () =>  (
           <ListTitle>DevOps</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Docker and AWS
+            Linux and Docker
           </ListParagraph>
         </ListContainer>
       </ListItem>
+      
     </List>
     <SectionDivider colorAlt />
   </Section>

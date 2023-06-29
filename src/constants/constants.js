@@ -39,9 +39,9 @@ export const projects = [
   ];
   
   export const TimeLineData = [
-    { year: 2020, text: 'Started my journey in programming', },
+    { year: 2020, text: 'Started my journey in programming, met Linux.', },
     { year: 2021, text: 'Joined FreeCodeCamp Online Training Porjects', },
     { year: 2022, text: 'Joined Bootcamp to learn Backend development', },
-    { year: 2023, text: 'Looking for jobs and learning Docker ', },
-    { year: 2024, text: 'Keep dreaming', },
+    { year: 2023, text: 'Looking for jobs and learning DevOps ', },
+    { year: 2024, text: 'Keep dreaming...', },
   ];
