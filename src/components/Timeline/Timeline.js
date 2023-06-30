@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, useContext } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimelineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import language from '@/constants/constants';
+import language from '@/i18n';
 import { Context } from '../Context';
 
 
@@ -16,7 +16,7 @@ const Timeline = () => {
 
 
   const { isEng } = useContext(Context);
-  
+
   const lang = language(isEng)
   const TimeLineData = lang.TimeLineData;
   const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
@@ -30,7 +30,7 @@ const Timeline = () => {
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
+
       scroll(carouselRef.current, scrollLeft);
     }
   }
@@ -57,7 +57,7 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>{lang.header.about}</SectionTitle>
       <SectionText>
-       {lang.aboutDesc}
+        {lang.aboutDesc}
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

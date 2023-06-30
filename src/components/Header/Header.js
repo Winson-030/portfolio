@@ -2,9 +2,9 @@ import Link from 'next/link';
 import React, { useContext } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
-import { SiLeetcode,SiGoogletranslate } from 'react-icons/si';
+import { SiLeetcode, SiGoogletranslate } from 'react-icons/si';
 import { Context } from '../Context';
-import language from '@/constants/constants';
+import language from '@/i18n';
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 
@@ -12,11 +12,11 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyle
 
 const Header = () => {
   const { isEng, setIsEng } = useContext(Context);
-  
+
   const lang = language(isEng)
- 
+
   const handleLang = () => {
-   setIsEng(!isEng);
+    setIsEng(!isEng);
   }
   return (
 
@@ -46,25 +46,23 @@ const Header = () => {
         </li>
       </Div2>
       <Div3>
-
+        <SocialIcons onClick={handleLang}>
+          <SiGoogletranslate size="3rem" />
+        </SocialIcons>
         <SocialIcons href="https://github.com/Winson-030">
           <AiFillGithub size="3rem" />
         </SocialIcons>
         <SocialIcons href="https://www.linkedin.com/in/winson-dev">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
- 
-        <SocialIcons href="https://leetcode.cn/u/winson-030">
-          <SiLeetcode size="3rem" />
-        </SocialIcons>
-        <SocialIcons onClick={handleLang}>
-          <SiGoogletranslate size="3rem" />
-        </SocialIcons>
+
+
+
       </Div3>
     </Container>
   )
 };
-  
+
 
 
 export default Header;

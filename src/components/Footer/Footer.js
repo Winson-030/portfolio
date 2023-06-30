@@ -1,10 +1,10 @@
-import React,{useContext} from 'react';
+import React, { useContext } from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 import { SiLeetcode } from 'react-icons/si';
-import language from '@/constants/constants';
+import language from '@/i18n';
 import { Context } from '../Context';
 const Footer = () => {
   const { isEng } = useContext(Context);
@@ -42,8 +42,8 @@ const Footer = () => {
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://leetcode.cn/u/winson-030">
-          <SiLeetcode size="3rem"/>
-        </SocialIcons>
+            <SiLeetcode size="3rem" />
+          </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>

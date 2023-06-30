@@ -58,7 +58,7 @@ const en_US = {
   },
   intro: {
     title: " Hola! \r\nWelcome To My Website",
-    desc: "I am Winson Lee, a full-stack developer currently living in Guangzhou,China. Also a big fan of Linux and I <strong>LOVE</strong> open-source software and community. Outside of programming I work as a model in a art academy. <i> Now I am looking for a job as a software developer, ideally working remotely.</i> Resume is below, feel free to contact me via email if you are interested.",
+    desc: "I am Winson Lee, a full-stack developer currently living in Guangzhou,China. Also a big fan of Linux and I LOVE open-source software and community. Outside of programming I work as a model in a art academy.  Now I am looking for a job as a software developer, ideally working remotely. Resume is below, feel free to contact me via email if you are interested.",
     resume: "Resume",
   },
   header: {
@@ -70,15 +70,15 @@ const en_US = {
   technologiesDesc: "I've worked with a range a fancy technologies in the full stack development world.From front-end to back-end.",
   frontend: {
     title: "Front-End",
-    desc:"Experiece with <br />React.js and Vue.js"
+    desc:"Experiece with React.js and Vue.js"
   },
   backend: {
     title: "Back-End",
-    desc:"Experience with <br />Java, Node.js and Databases"
+    desc:"Experience with Java, Node.js and Databases"
   },
   devops: {
     title: "DevOps",
-    desc:"Experience with <br />Linux and Docker"
+    desc:"Experience with Linux and Docker"
   },
   footer: {
     website: "Website",
@@ -163,11 +163,11 @@ const zh_CN = {
   technologiesDesc: "在全栈开发领域，我使用各种成熟且先进的技术进行开发，从前端到后端。",
   frontend: {
     title: "前端",
-    desc:"主要使用React.js 和 Vue.js进行前端开发"
+    desc:"主要使用React.js 和 Vue.js进行开发"
   },
   backend: {
     title: "后端",
-    desc:"主要使用 Java、 Node.js 和 各种数据库进行后端开发"
+    desc:"主要使用 Java、 Node.js 和 各种数据库进行开发"
   },
   devops: {
     title: "运维开发",

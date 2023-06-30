@@ -6,11 +6,11 @@ import { LeftSection } from './HeroStyles';
 import Link from 'next/link';
 import { Context } from '../Context';
 
-import language from '@/constants/constants';
+import language from '@/i18n';
 
 const Hero = (props) => {
 
-  const { isEng } = useContext(Context) 
+  const { isEng } = useContext(Context)
   const lang = language(isEng)
 
 
@@ -19,8 +19,7 @@ const Hero = (props) => {
       <Section row nopadding>
         <LeftSection>
           <SectionTitle main center>
-            {/* Hola! <br />
-          Welcome To My Website */}
+
             {lang.intro.title}
           </SectionTitle>
           <SectionText>
@@ -32,6 +31,6 @@ const Hero = (props) => {
     </>
   )
 };
- 
+
 
 export default Hero;
