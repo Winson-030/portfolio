@@ -86,7 +86,7 @@ const en_US = {
     github: "Github",
     slogan: "May Code be with you."
   },
-  resumeURL: "https://youtube.com"
+  resumeURL: "https://r.easycv.cn/vCA1mK"
 
 
 
@@ -180,7 +180,7 @@ const zh_CN = {
     github: "代码仓库",
     slogan: "愿代码与你同在。"
   },
-  resumeURL:"https://github.com/"
+  resumeURL:"https://r.easycv.cn/Mj0KjI"
 }
 
 const language = (isEng) => {
