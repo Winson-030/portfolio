@@ -1,27 +1,30 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 import { SiLeetcode } from 'react-icons/si';
-
-
+import language from '@/constants/constants';
+import { Context } from '../Context';
 const Footer = () => {
+  const { isEng } = useContext(Context);
+  const lang = language(isEng)
+
   return (
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Website</LinkTitle>
+          <LinkTitle>{lang.footer.website}</LinkTitle>
           <LinkItem href="https://winson.dev">winson.dev</LinkItem>
         </LinkColumn>
         <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
+          <LinkTitle>{lang.footer.emial}</LinkTitle>
           <LinkItem href="mailto:mail@winson.dev">
             mail@winson.dev
           </LinkItem>
         </LinkColumn>
         <LinkColumn>
-          <LinkTitle>Github</LinkTitle>
+          <LinkTitle>{lang.footer.github}</LinkTitle>
           <LinkItem href="https://github.com/Winson-030">
             @winson030
           </LinkItem>
@@ -29,7 +32,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>May Code be with you.</Slogan>
+          <Slogan>{lang.footer.slogan}</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/Winson-030">

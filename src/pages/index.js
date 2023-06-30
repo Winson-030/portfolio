@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Layout from "@/layouts/Layout";
 import { Section } from "@/styles/GlobalComponents";
 
@@ -8,16 +9,24 @@ import Projects from "@/components/Projects/Projects";
 import Technologies from "@/components/Technologies/Technologies";
 import Timeline from "@/components/Timeline/Timeline";
 
-
+import { Context } from "@/components/Context";
 
 
 
 
 const Home = () => {
-    return (
+
+  const [isEng, setIsEng] = useState(true);
+
+  return (
+    <Context.Provider value={{isEng,setIsEng}}>
         <Layout>
         <Section grid>
-          <Hero />
+         
+
+         
+            <Hero />
+          
           <BackgroundAnimation />
         </Section>
         <Projects />
@@ -25,6 +34,7 @@ const Home = () => {
         <Timeline />
         <Accomplishments />
       </Layout>
+      </Context.Provider>
       
     )
 }

@@ -1,16 +1,24 @@
-import React from 'react';
 
+import { React,useContext } from'react';
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { en_US } from '@/constants/constants';
-import { zh_CN } from '@/constants/zh_CN';
-let isEng = true;
-const projects = isEng ? en_US.projects : zh_CN.projects;
-const card = isEng ? en_US.card : zh_CN.card;
-const Projects = () => (
-  <Section nopadding id="projects">
+
+import language from '@/constants/constants';
+import { Context } from '../Context';
+
+
+const Projects = () => {
+
+  const { isEng } = useContext(Context);
+  
+  const lang = language(isEng);
+  const projects = lang.projects;
+const card = lang.card;
+  return (
+
+<Section nopadding id="projects">
     <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
+    <SectionTitle main>{lang.header.projects}</SectionTitle>
     <GridContainer>
       {projects.map((p, i) => {
         return (
@@ -38,6 +46,10 @@ const Projects = () => (
       })}
     </GridContainer>
   </Section>
-);
+  )
+}
+
+  
+
 
 export default Projects;

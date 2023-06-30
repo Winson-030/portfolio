@@ -1,17 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React,{useContext} from 'react';
 import {  DiReact } from 'react-icons/di';
 import { FaDocker, FaJava } from 'react-icons/fa'
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { Context } from '../Context';
+import language from '@/constants/constants';
+const Technologies = () => {
 
-const Technologies = () =>  (
-  <Section id="tech">
+  const { isEng } = useContext(Context);
+  const lang = language(isEng)
+  
+  return (
+<Section id="tech">
     <SectionDivider divider />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle>{lang.header.technologies}</SectionTitle>
     <SectionText>
-      I've worked with a range a fancy technologies in the full stack development world.
-      From front-end to back-end.
+  {lang.technologiesDesc}
     </SectionText>
     <List>
       <ListItem>
@@ -19,10 +24,9 @@ const Technologies = () =>  (
           <DiReact size="5rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
+          <ListTitle>{lang.frontend.title}</ListTitle>
           <ListParagraph>
-            Experiece with <br />
-            React.js and Vue.js
+      {lang.frontend.desc}
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -31,10 +35,9 @@ const Technologies = () =>  (
           <FaJava size="5rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
+          <ListTitle>{lang.backend.title}</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Java, Node.js and Databases
+           {lang.backend.desc}
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -43,10 +46,9 @@ const Technologies = () =>  (
           <FaDocker size="5rem" />
         </picture>
         <ListContainer>
-          <ListTitle>DevOps</ListTitle>
+          <ListTitle>{lang.devops.title}</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Linux and Docker
+          {lang.devops.desc}
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -54,6 +56,8 @@ const Technologies = () =>  (
     </List>
     <SectionDivider colorAlt />
   </Section>
-);
+  )
+}
+  
 
 export default Technologies;

@@ -1,24 +1,21 @@
-import React from "react";
+import React,{useContext} from "react";
 
 import { Section, SectionDivider, SectionTitle } from "@/styles/GlobalComponents";
 import { BoxNum, BoxText, Boxes, Box } from "./AccompolishmentsStyles";
-import { en_US } from "@/constants/constants";
+
+import language from "@/constants/constants";
+import { Context } from '../Context';
 
 
 
-// const data = [
-//     { number: 1, text: 'Github PR I contributed', },
-//     { number: 2, text: 'Open Source Projects' },
-//     { number: 300, text: 'People I helped to solve network and device issues', },
-//     { number: 600, text: 'Days of programming career', },
-// ];
-const data = en_US.data;
-
-const Accomplishments = () => (
-
-    <Section>
+const Accomplishments = () => {
+    const { isEng } = useContext(Context);
+    const lang = language(isEng)
+    const data = lang.data;
+    return (
+        <Section>
         <SectionTitle>
-            Personal Achievements
+           {lang.achievements}
         </SectionTitle>
         <Boxes>
             {data.map((card,index) => (
@@ -30,7 +27,11 @@ const Accomplishments = () => (
         </Boxes>
         <SectionDivider />
     </Section>
-);
+    )
+}
+
+   
+
 
 
 

@@ -1,16 +1,25 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimelineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { en_US } from '@/constants/constants';
+import language from '@/constants/constants';
+import { Context } from '../Context';
 
-const TimeLineData = en_US.TimeLineData;
 
-const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
+
+
 
 const Timeline = () => {
+
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
+
+
+  const { isEng } = useContext(Context);
+  
+  const lang = language(isEng)
+  const TimeLineData = lang.TimeLineData;
+  const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
   const scroll = (node, left) => {
     return node.scrollTo({ left, behavior: 'smooth' });
@@ -46,10 +55,9 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionTitle>About Me</SectionTitle>
+      <SectionTitle>{lang.header.about}</SectionTitle>
       <SectionText>
-        I was a Social worker and now I am a programmer. Also as a Linux user ,I love open-source software and community.
-        I code for living, for the people I love, and for the society I care about.
+       {lang.aboutDesc}
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
