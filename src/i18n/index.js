@@ -44,7 +44,7 @@ const en_US = {
     { year: 2023, text: 'Looking for jobs and learning DevOps ', },
     { year: 2024, text: 'Keep dreaming...', },
   ],
-  achievements:"Personal Achievements",
+  achievements: "Personal Achievements",
   data: [
     { number: 1, text: 'Github PR I contributed', },
     { number: 2, text: 'Open Source Projects' },
@@ -64,30 +64,31 @@ const en_US = {
   header: {
     projects: "Projects",
     technologies: "Technologies",
-    about:"About Me",
+    about: "About Me",
   },
   aboutDesc: "I was a Social worker and now I am a programmer. Also as a Linux user ,I love open-source software and community. I code for living, for the people I love, and for the society I care about.",
   technologiesDesc: "I've worked with a range a fancy technologies in the full stack development world.From front-end to back-end.",
   frontend: {
     title: "Front-End",
-    desc:"Experiece with React.js and Vue.js"
+    desc: "Experiece with React.js and Vue.js"
   },
   backend: {
     title: "Back-End",
-    desc:"Experience with Java, Node.js and Databases"
+    desc: "Experience with Java, Node.js and Databases"
   },
   devops: {
     title: "DevOps",
-    desc:"Experience with Linux and Docker"
+    desc: "Experience with Linux and Docker"
   },
   footer: {
     website: "Website",
     emial: "Email",
     github: "Github",
-  slogan:"May Code be with you."
-  }
-  
-  
+    slogan: "May Code be with you."
+  },
+  resumeURL: "https://youtube.com"
+
+
 
 }
 
@@ -137,7 +138,7 @@ const zh_CN = {
     { year: 2023, text: '求职以及学习DevOps ', },
     { year: 2024, text: '继续追梦...', },
   ],
-  achievements:"个人成就",
+  achievements: "个人成就",
   data: [
     { number: 1, text: '我贡献的Github 合并请求', },
     { number: 2, text: '开源项目' },
@@ -157,28 +158,29 @@ const zh_CN = {
   header: {
     projects: "项目",
     technologies: "技术栈",
-    about:"关于我"
+    about: "关于我"
   },
   aboutDesc: "我曾经是一名社会工作者，现在是一名程序员。我也是一位Linux 用户，我喜欢开源软件和开源社区。我为生计，为所爱之人，为我关心的社会贡献代码。",
   technologiesDesc: "在全栈开发领域，我使用各种成熟且先进的技术进行开发，从前端到后端。",
   frontend: {
     title: "前端",
-    desc:"主要使用React.js 和 Vue.js进行开发"
+    desc: "主要使用React.js 和 Vue.js进行开发"
   },
   backend: {
     title: "后端",
-    desc:"主要使用 Java、 Node.js 和 各种数据库进行开发"
+    desc: "主要使用 Java、 Node.js 和 各种数据库进行开发"
   },
   devops: {
     title: "运维开发",
-    desc:"常用Linux 和 Docker进行部署运维"
+    desc: "常用Linux 和 Docker进行部署运维"
   },
   footer: {
     website: "个人网站",
     emial: "邮箱",
     github: "代码仓库",
-  slogan:"愿代码与你同在。"
-  }
+    slogan: "愿代码与你同在。"
+  },
+  resumeURL:"https://github.com/"
 }
 
 const language = (isEng) => {

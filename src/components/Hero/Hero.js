@@ -25,7 +25,7 @@ const Hero = (props) => {
           <SectionText>
             {lang.intro.desc}
           </SectionText>
-          <Link href='https://youtube.com'><Button onClick={props.handleResume}>{lang.intro.resume}</Button></Link>
+          <Link href={lang.resumeURL}><Button onClick={props.handleResume}>{lang.intro.resume}</Button></Link>
         </LeftSection>
       </Section>
     </>
