@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Winson-030/portfolio#readme",
   "dependencies": {
+    "@vercel/analytics": "^1.0.1",
     "next": "^13.4.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
