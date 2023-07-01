@@ -2,9 +2,9 @@ import Link from 'next/link';
 import React, { useContext } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
-import {  SiGoogletranslate } from 'react-icons/si';
+import { SiGoogletranslate } from 'react-icons/si';
 import { Context } from '../Context';
-import { language ,customUrl } from '@/i18n';
+import { language, customUrl } from '@/i18n';
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 
@@ -47,7 +47,7 @@ const Header = () => {
       </Div2>
       <Div3>
         <SocialIcons onClick={handleLang}>
-          <SiGoogletranslate  />
+          <SiGoogletranslate />
         </SocialIcons>
         <SocialIcons href={customUrl.github_url}>
           <AiFillGithub />
