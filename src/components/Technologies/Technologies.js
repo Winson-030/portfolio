@@ -5,7 +5,7 @@ import { FaDocker, FaJava } from 'react-icons/fa'
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 import { Context } from '../Context';
-import language from '@/i18n';
+import { language } from '@/i18n';
 const Technologies = () => {
 
   const { isEng } = useContext(Context);

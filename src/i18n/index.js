@@ -6,7 +6,7 @@ const en_US = {
       image: '/images/rentstore.jpg',
       tags: ['Vue.js', 'SpringBoot', 'Docker', 'Elasticsearch'],
       source: 'https://github.com/Winson-030/nianyu',
-      visit: 'https://google.com',
+      visit: '#',
       id: 0,
     },
     {
@@ -15,7 +15,7 @@ const en_US = {
       image: '/images/tools.jpg',
       tags: ['SpringBoot', 'Vue.js', 'ConvertAPI'],
       source: 'https://github.com/Winson-030/toolbox',
-      visit: 'https://google.com',
+      visit: '#',
       id: 1,
     },
     {
@@ -64,7 +64,7 @@ const en_US = {
   header: {
     projects: "Projects",
     technologies: "Technologies",
-    about: "About Me",
+    about: "About",
   },
   aboutDesc: "I was a Social worker and now I am a programmer. Also as a Linux user ,I love open-source software and community. I code for living, for the people I love, and for the society I care about.",
   technologiesDesc: "I've worked with a range a fancy technologies in the full stack development world.From front-end to back-end.",
@@ -82,8 +82,11 @@ const en_US = {
   },
   footer: {
     website: "Website",
-    emial: "Email",
+    websitedesc: "winson.dev",
+    email: "Email",
+    emaildesc: "mail@winson.dev",
     github: "Github",
+    githubdesc: "@winson030",
     slogan: "May Code be with you."
   },
   resumeURL: "https://r.easycv.cn/vCA1mK"
@@ -100,7 +103,7 @@ const zh_CN = {
       image: '/images/rentstore.jpg',
       tags: ['Vue.js', 'SpringBoot', 'Docker', 'Elasticsearch'],
       source: 'https://github.com/Winson-030/nianyu',
-      visit: 'https://google.com',
+      visit: '#',
       id: 0,
     },
     {
@@ -109,7 +112,7 @@ const zh_CN = {
       image: '/images/tools.jpg',
       tags: ['SpringBoot', 'Vue.js', 'ConvertAPI'],
       source: 'https://github.com/Winson-030/toolbox',
-      visit: 'https://google.com',
+      visit: '#',
       id: 1,
     },
     {
@@ -176,16 +179,26 @@ const zh_CN = {
   },
   footer: {
     website: "个人网站",
-    emial: "邮箱",
+    websitedesc: "winson.dev",
+    email: "邮箱",
+    emaildesc: "mail@winson.dev",
     github: "代码仓库",
+    githubdesc: "@winson030",
     slogan: "愿代码与你同在。"
   },
-  resumeURL:"https://r.easycv.cn/Mj0KjI"
+  resumeURL: "https://r.easycv.cn/Mj0KjI"
 }
 
 const language = (isEng) => {
   return isEng ? en_US : zh_CN;
 }
 
+const customUrl = {
+  email_url: "mailto:mail@winson.dev",
+  website_url: "https://winson.dev",
+  github_url: "https://github.com/Winson-030",
+  linkdin_url: "https://www.linkedin.com/in/winson-dev",
+  leetcode_url: "https://leetcode.cn/u/winson-030",
+}
 
-export default language;
+export { language, customUrl };

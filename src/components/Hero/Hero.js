@@ -6,7 +6,7 @@ import { LeftSection } from './HeroStyles';
 import Link from 'next/link';
 import { Context } from '../Context';
 
-import language from '@/i18n';
+import { language } from '@/i18n';
 
 const Hero = (props) => {
 

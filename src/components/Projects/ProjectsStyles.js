@@ -106,7 +106,6 @@ transition: 0.5s;
 
 export const TagList = styled.ul`
 display: flex;
-
 justify-content: space-around;
 padding: 2rem;
 @media ${(props) => props.theme.breakpoints.sm} {
@@ -116,9 +115,7 @@ padding: 2rem;
 }
 `
 export const Tag = styled.li`
-font-weight: 600;
-font-family: monospace;
-color: #d8bfbf;
+color: #ffffff;
 font-size: 1.5rem;
 @media ${(props) => props.theme.breakpoints.sm} {
   margin-top:5px;

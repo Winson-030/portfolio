@@ -35,7 +35,7 @@ export const LinkItem = styled.a`
 	}
 
 	@media ${props => props.theme.breakpoints.sm} {
-		font-size: 8px;
+		font-size: 14px;
 		line-height: 14px;
 		margin-bottom: 8px;
 		display: flex;
@@ -115,21 +115,24 @@ export const SocialContainer = styled.div`
 
 export const LinkList = styled.ul`
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
-  display: grid;
-	grid-template-columns: repeat(3, minmax(85px, 220px));
+  display: flex;
+
 	gap: 40px;
   padding: 40px 0 28px;
 
 	@media ${props => props.theme.breakpoints.lg} {
+		flex-direction: row;
 		padding: 32px 0 16px;
 	}
 
 	@media ${props => props.theme.breakpoints.md} {
+		flex-direction: row;
 		width: 100%;
 		padding: 32px 0 16px;
 		gap: 16px;
 	}
 	@media ${props => props.theme.breakpoints.sm} {
+		flex-direction: column;
 		width: 100%;
 		padding: 32px 4px 16px;
 		gap: 5px;
@@ -145,14 +148,14 @@ export const LinkColumn = styled.div`
 export const LinkTitle = styled.h4`
 	font-style: normal;
 	font-weight: 600;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.4);
 	margin-bottom: 16px;
 
 	@media ${props => props.theme.breakpoints.sm} {
-		font-size: 10px;
+		font-size: 12px;
 		line-height: 12px;
 		margin-bottom: 8px;
 	}

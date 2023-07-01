@@ -60,11 +60,11 @@ font-family: monospace;
   }
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 1rem 1rem;
-    
+     font-size: 1.5rem;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: .2rem 1.5rem;
-    
+     font-size: 1.5rem;
   }
 `;
 
@@ -118,6 +118,7 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 // Social Icons 
 
 export const SocialIcons = styled.a`
+font-size:3rem;
 transition: 0.3s ease;
 color: white;
 border-radius: 50px;
@@ -127,5 +128,9 @@ border-radius: 50px;
     transform: scale(1.2);
     cursor: pointer;
     
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 2rem;
+    padding: 8px;
   }
 `

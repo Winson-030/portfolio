@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, useContext } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimelineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import language from '@/i18n';
+import { language } from '@/i18n';
 import { Context } from '../Context';
 
 
@@ -17,7 +17,7 @@ const Timeline = () => {
 
   const { isEng } = useContext(Context);
 
-  const lang = language(isEng)
+  const lang = language(isEng);
   const TimeLineData = lang.TimeLineData;
   const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 

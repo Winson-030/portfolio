@@ -3,7 +3,7 @@ import { React, useContext } from 'react';
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 
-import language from '@/i18n';
+import { language } from '@/i18n';
 import { Context } from '../Context';
 
 

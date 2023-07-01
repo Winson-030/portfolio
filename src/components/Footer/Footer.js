@@ -4,29 +4,29 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 import { SiLeetcode } from 'react-icons/si';
-import language from '@/i18n';
+import { language ,customUrl} from '@/i18n';
 import { Context } from '../Context';
 const Footer = () => {
   const { isEng } = useContext(Context);
-  const lang = language(isEng)
+  const lang = language(isEng);
 
   return (
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
           <LinkTitle>{lang.footer.website}</LinkTitle>
-          <LinkItem href="https://winson.dev">winson.dev</LinkItem>
+          <LinkItem href={customUrl.website_url}>{lang.footer.websitedesc}</LinkItem>
         </LinkColumn>
         <LinkColumn>
-          <LinkTitle>{lang.footer.emial}</LinkTitle>
-          <LinkItem href="mailto:mail@winson.dev">
-            mail@winson.dev
+          <LinkTitle>{lang.footer.email}</LinkTitle>
+          <LinkItem href={customUrl.email_url}>
+            {lang.footer.emaildesc}
           </LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>{lang.footer.github}</LinkTitle>
-          <LinkItem href="https://github.com/Winson-030">
-            @winson030
+          <LinkItem href={customUrl.github_url}>
+           {lang.footer.githubdesc}
           </LinkItem>
         </LinkColumn>
       </LinkList>
@@ -35,13 +35,13 @@ const Footer = () => {
           <Slogan>{lang.footer.slogan}</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/Winson-030">
+          <SocialIcons href={customUrl.github_url}>
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/winson-dev">
+          <SocialIcons href={customUrl.linkdin_url}>
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://leetcode.cn/u/winson-030">
+          <SocialIcons href={customUrl.leetcode_url}>
             <SiLeetcode size="3rem" />
           </SocialIcons>
         </SocialContainer>

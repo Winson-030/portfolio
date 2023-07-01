@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Section, SectionDivider, SectionTitle } from "@/styles/GlobalComponents";
 import { BoxNum, BoxText, Boxes, Box } from "./AccompolishmentsStyles";
 
-import language from "@/i18n";
+import { language } from '@/i18n';
 import { Context } from '../Context';
 
 
