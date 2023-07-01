@@ -24,7 +24,7 @@ const Header = () => {
       <Div1>
         <Link href="/">
           <div style={{ display: 'flex', alignItems: 'center', color: "white" }}>
-            <DiCssdeck size="5rem" /> <NavLink>Winson Lee</NavLink>
+            <DiCssdeck size="5rem" /> <NavLink>{lang.site_name}</NavLink>
           </div>
         </Link>
       </Div1>

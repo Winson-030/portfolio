@@ -1,4 +1,5 @@
 const en_US = {
+  site_name:"winson.dev",
   projects: [
     {
       title: 'Nianyu rentstore',
@@ -96,6 +97,7 @@ const en_US = {
 }
 
 const zh_CN = {
+  site_name:"winson.dev",
   projects: [
     {
       title: '鲶鱼商城',
