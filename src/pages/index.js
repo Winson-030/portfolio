@@ -22,11 +22,7 @@ const Home = () => {
     <Context.Provider value={{isEng,setIsEng}}>
         <Layout>
         <Section grid>
-         
-
-         
             <Hero />
-          
           <BackgroundAnimation />
         </Section>
         <Projects />
