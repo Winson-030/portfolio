@@ -11,7 +11,7 @@ const Button = (props) => (
         {props.children}
         <ButtonFront
             alt={props.alt}
-            onClick={props.onClick}
+
             disabled={props.disabled}
         >
             {props.children}
