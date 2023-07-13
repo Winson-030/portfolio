@@ -1,12 +1,12 @@
 const en_US = {
-  site_name:"winson.dev",
+  site_name: "winson.dev",
   projects: [
     {
-      title: 'Nianyu rentstore',
-      description: "This rentstore project is developed using the SpringBoot and Vue.js, including mobile client and admin platform, and deployed using Docker, to connect people with temporary rental needs and want to profit from idle items. With Elasticsearch and Echarts for efficient product search modules and elegant user data presentations.",
-      image: '/images/rentstore.jpg',
-      tags: ['Vue.js', 'SpringBoot', 'Docker', 'Elasticsearch'],
-      source: 'https://github.com/Winson-030/nianyu',
+      title: 'Movies website',
+      description: "This project is developed using the SpringBoot and React.js, packaged and deployed using Docker Compose, you can watch movie trailers and review with any ideas.",
+      image: '/images/movies.png',
+      tags: ['React.js', 'SpringBoot', 'Docker', 'Mongodb'],
+      source: 'https://github.com/Winson-030/movies',
       visit: '#',
       id: 0,
     },
@@ -97,14 +97,14 @@ const en_US = {
 }
 
 const zh_CN = {
-  site_name:"winson.dev",
+  site_name: "winson.dev",
   projects: [
     {
-      title: '鲶鱼商城',
-      description: "这个商城项目使用SpringBoot和Vue.js开发，包括移动客户端和管理平台，使用Docker部署，连接有临时租赁需求并希望通过闲置物品获利的人。用Elasticsearch和Echarts实现高效的产品搜索模块和优雅的用户数据展示。",
-      image: '/images/rentstore.jpg',
-      tags: ['Vue.js', 'SpringBoot', 'Docker', 'Elasticsearch'],
-      source: 'https://github.com/Winson-030/nianyu',
+      title: '电影网站',
+      description: "这个项目使用SpringBoot和React.js开发，使用Docker打包和部署，用户可以在线观看电影预告片和评论。",
+      image: '/images/movies.png',
+      tags: ['React.js', 'SpringBoot', 'Docker', 'Mongodb'],
+      source: 'https://github.com/Winson-030/movies',
       visit: '#',
       id: 0,
     },
