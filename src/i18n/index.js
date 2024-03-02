@@ -145,10 +145,10 @@ const zh_CN = {
   ],
   achievements: "个人成就",
   data: [
-    { number: 1, text: '我贡献的Github 合并请求', },
-    { number: 2, text: '开源项目' },
-    { number: 300, text: '我帮助解决网络和设备问题的人数', },
-    { number: 600, text: '编程生涯的天数', },
+    { number: 2, text: '我贡献的Github 合并请求', },
+    { number: 10, text: '开源项目' },
+    { number: 700, text: '我帮助解决网络和设备问题的人数', },
+    { number: 900, text: '编程生涯的天数', },
   ],
   card: {
     stack: "技术栈",
