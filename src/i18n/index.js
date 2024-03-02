@@ -42,15 +42,15 @@ const en_US = {
     { year: 2020, text: 'Started my journey in programming, met Linux.', },
     { year: 2021, text: 'Joined FreeCodeCamp Online Training Porjects', },
     { year: 2022, text: 'Joined Bootcamp to learn Backend development', },
-    { year: 2023, text: 'Looking for jobs and learning DevOps ', },
-    { year: 2024, text: 'Keep dreaming...', },
+    { year: 2023, text: 'Looking for jobs and learning DevOps, Certified from AWS and Linux Foundation', },
+    { year: 2024, text: 'Work as a DevOps Engineer in a Company', },
   ],
   achievements: "Personal Achievements",
   data: [
-    { number: 1, text: 'Github PR I contributed', },
-    { number: 2, text: 'Open Source Projects' },
-    { number: 300, text: 'People I helped to solve network and device issues', },
-    { number: 600, text: 'Days of programming career', },
+    { number: 2, text: 'Github PR I contributed', },
+    { number: 10, text: 'Open Source Projects' },
+    { number: 700, text: 'People I helped to solve network and device issues', },
+    { number: 900, text: 'Days of programming career', },
   ],
   card: {
     stack: "Stack",
@@ -59,7 +59,7 @@ const en_US = {
   },
   intro: {
     title: " Hola! \r\nWelcome To My Website",
-    desc: "I am Winson Lee, a full-stack developer currently living in Guangzhou,China. Also a big fan of Linux and I LOVE open-source software and community. Outside of programming I work as a model in a art academy.  Now I am looking for a job as a software developer, ideally working remotely. Resume is below, feel free to contact me via email if you are interested.",
+    desc: "I am Winson Lee, a DevOps Engineer currently living in Guangzhou,China. Also a big fan of Linux and LOVE open-source software and community. Outside of programming I love to dive into homelab and network, both hardwares and softwares. Resume is below, feel free to contact me via email if you are interested.",
     resume: "Resume",
   },
   header: {
@@ -67,19 +67,19 @@ const en_US = {
     technologies: "Technologies",
     about: "About",
   },
-  aboutDesc: "I was a Social worker and now I am a programmer. Also as a Linux user ,I love open-source software and community. I code for living, for the people I love, and for the society I care about.",
-  technologiesDesc: "I've worked with a range a fancy technologies in the full stack development world.From front-end to back-end.",
+  aboutDesc: "I was a Social worker and now I am a DevOps Engineer and programmer. Also as a Linux user ,I love open-source software and community. I code for living, for the people I love, and for the society I care about.",
+  technologiesDesc: "I've worked with a range a fancy technologies in development and DevOps. From front-end to back-end.",
   frontend: {
     title: "Front-End",
     desc: "Experiece with React.js and Vue.js"
   },
   backend: {
     title: "Back-End",
-    desc: "Experience with Java, Node.js and Databases"
+    desc: "Experience with Java, Node.js and MySQL"
   },
   devops: {
     title: "DevOps",
-    desc: "Experience with Linux and Docker"
+    desc: "Experience with Cloud service and Kubernetes Administration, Terraform, Ansible"
   },
   footer: {
     website: "Website",
@@ -140,8 +140,8 @@ const zh_CN = {
     { year: 2020, text: '开始了我的编程之旅，认识了Linux操作系统', },
     { year: 2021, text: '参加 Freecodecamp 的在线编程项目', },
     { year: 2022, text: '参加后端开发的培训班', },
-    { year: 2023, text: '求职以及学习DevOps ', },
-    { year: 2024, text: '继续追梦...', },
+    { year: 2023, text: '求职以及学习DevOps，获得AWS和Linux基金会的认证', },
+    { year: 2024, text: '在一家公司担任DveOps工程师', },
   ],
   achievements: "个人成就",
   data: [
@@ -157,7 +157,7 @@ const zh_CN = {
   },
   intro: {
     title: " 久违! \r\n 欢迎来到我的网站",
-    desc: "我是李永杰，一名全栈开发，目前居住在广州。我是Linux的忠实粉丝，我喜欢使用开源软件和逛开源社区。最近我正在寻找一份软件开发的工作，最好是远程工作。简历如下，如果你有兴趣，请随时通过电子邮件联系我。",
+    desc: "我是李永杰，一名DevOps 工程师，目前居住在广州。我是Linux的忠实粉丝，我喜欢使用开源软件和逛开源社区。开发之余我对家庭服务器和网络感兴趣，包含各类硬件和软件。简历如下，如果你有兴趣，请随时通过电子邮件联系我。",
     resume: "简历",
   },
   header: {
@@ -165,19 +165,19 @@ const zh_CN = {
     technologies: "技术栈",
     about: "关于我"
   },
-  aboutDesc: "我曾经是一名社会工作者，现在是一名程序员。我也是一位Linux 用户，我喜欢开源软件和开源社区。我为生计，为所爱之人，为我关心的社会贡献代码。",
-  technologiesDesc: "在全栈开发领域，我使用各种成熟且先进的技术进行开发，从前端到后端。",
+  aboutDesc: "我曾经是一名社会工作者，现在是一名DevOps 工程师，开发者。我也是一位Linux 用户，我喜欢开源软件和开源社区。我为生计，为所爱之人，为我关心的社会贡献代码。",
+  technologiesDesc: "在全栈开发领域，我使用各种成熟且先进的技术进行运维和开发，从前端到后端。",
   frontend: {
     title: "前端",
     desc: "主要使用React.js 和 Vue.js进行开发"
   },
   backend: {
     title: "后端",
-    desc: "主要使用 Java、 Node.js 和 各种数据库进行开发"
+    desc: "主要使用 Java、 Node.js 和 MySQL"
   },
   devops: {
     title: "运维开发",
-    desc: "常用Linux 和 Docker进行部署运维"
+    desc: "使用主流云服务 和 k8s进行服务部署，常用Terraform 和 Ansible"
   },
   footer: {
     website: "个人网站",
